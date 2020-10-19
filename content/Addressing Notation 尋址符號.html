@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='首頁.html'>首頁</a><ul class='dropdown'><li><a href='Unit  1.html'>Unit  1</a><li><a href='Succeeding in PC Hardware.html'>Succeeding in PC Hardware</a><li><a href='Overview(總覽).html'>Overview(總覽)</a><li><a href='TCP IP.html'>TCP IP</a><li><a href='IPv4 and IPv6 Addresses.html'>IPv4 and IPv6 Addresses</a><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                     <li class='has-children'><a href='首頁.html'>首頁</a><ul class='dropdown'><li><a href='Unit  1.html'>Unit  1</a><li><a href='Overview(總覽).html'>Overview(總覽)</a><li><a href='TCP IP.html'>TCP IP</a><li><a href='IPv4 and IPv6 Addresses.html'>IPv4 and IPv6 Addresses</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses  網絡和主機地址.html'>Network and Host Addresses  網絡和主機地址</a><li><a href='IPv4 Data Flows IPv4數據流.html'>IPv4 Data Flows IPv4數據流</a><li><a href='Benefits of IPv6 IPv6的好處.html'>Benefits of IPv6 IPv6的好處</a><li><a href='IPv6 Data Flows   IPv6數據流.html'>IPv6 Data Flows   IPv6數據流</a><li><a href='APIPA  Link-Local   APIPA  本地鏈接.html'>APIPA  Link-Local   APIPA  本地鏈接</a><li><a href='Client-side DHCP   客戶端DHCP.html'>Client-side DHCP   客戶端DHCP</a><li><a href='Client-side DNS settings   客戶端DNS設置.html'>Client-side DNS settings   客戶端DNS設置</a><li><a href='TCP Vs. UDP  TCPVs。UDP協議.html'>TCP Vs. UDP  TCPVs。UDP協議</a><li><a href='TCP Windowing   TCP窗口.html'>TCP Windowing   TCP窗口</a><li><a href='Email   電子郵件.html'>Email   電子郵件</a><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,16 +133,17 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Unit  1 << <a href='Unit  1.html'>Previous</a> <a href='Overview(總覽).html'>Next</a> >> Overview(總覽)<br /><h1>Succeeding in PC Hardware</h1>
-<p><img alt="" height="252" src="./../images/pc-assembly.jpg" width="315"/></p>
-<p id="N10654" lang="">PC Hardware is an online course, where the content will be presented in the form of both text and activities.</p>
-<p id="N10657" lang="">While you will have more flexibility than in a traditional course, you will also have more responsibility for your own learning. You will need to:</p>
-<ul lang="">
-<li lang="">Plan how to work through each unit.</li>
-<li lang="">Determine how to use the various features of the course to help you learn.</li>
-<li lang="">Decide when you need to seek additional support.</li>
-</ul>
-<br />Unit  1 << <a href='Unit  1.html'>Previous</a> <a href='Overview(總覽).html'>Next</a> >> Overview(總覽)</div>
+    <div id="tipue_search_content">IPv4 and IPv6 Addresses << <a href='IPv4 and IPv6 Addresses.html'>Previous</a> <a href='Network and Host Addresses  網絡和主機地址.html'>Next</a> >> Network and Host Addresses  網絡和主機地址<br /><h1>Addressing Notation 尋址符號</h1>
+<p>Internet protocol (IP) networking relies on both an IP address and subnet mask using a 32-bit dotted decimal notation. The Internet Engineering Task Force (IETF) and the Internet Corporation for Assigned Names and Numbers (ICANN) developed and maintains the standards for IP allocation and protocols.</p>
+<p><br/>Internet協議（IP）網絡使用32位點分十進製表示法同時依賴IP地址和子網掩碼。互聯網工程任務組（IETF）和互聯網名稱與數字地址分配機構（ICANN）制定並維護了IP分配和協議的標準。</p>
+<p>Each octet is made up of eight bits (one byte or two nibbles); multiplied by four octets, that equals 32 bits. The maximum value for any octet is 255 (28-1) so therefore the maximum number of IPv4 addresses available is 232, which equals 4,294,967,296 unique addresses.</p>
+<p>The presence of the subnet mask tells networking devices how much of the IP address belongs to the network and how much to the host. The 255.255.255.0 subnet represents that the first three octets are the network and the “0” represents the available number of hosts (nodes). So, the form is N.N.N.H. Think of the combination of IP and subnet as similar to regular postal addresses. You need a zip code (subnet) and street address (host).</p>
+<p>There are five different classes in IPv4 labelled A through E, with classes A, B, and C used by computer networks and classes D and E reserved as experimental. As originally designed, the IP range is determined by the lead bits in the first octet and matched to one specific subnet mask. This is called "classful" addressing. When the IP class does not match the default subnet mask, it is called "classless."</p>
+<p>每個八位位組由八位組成（一個字節或兩個半字節）。乘以四個八位位組，等於32位。任何八位位組的最大值為255（2 8 -1），因此可用的IPv4地址的最大數量為2 32，等於4,294,967,296個唯一地址。</p>
+<p>子網掩碼的存在告訴網絡設備多少IP地址屬於網絡，多少屬於主機。255.255.255.0子網表示前三個八位位組是網絡，“ 0”表示可用的主機（節點）數。因此，形式為NNNH。將IP和子網的組合視為類似於常規郵政地址。您需要一個郵政編碼（子網）和街道地址（主機）。</p>
+<p>IPv4中有五種不同的類別，標記為A到E，計算機網絡使用的類別為A，B和C，D和E類別保留為實驗性。按照最初的設計，IP範圍由第一個八位位組中的前導位確定，並與一個特定的子網掩碼匹配。這稱為“有類”尋址。如果IP類與默認子網掩碼不匹配，則稱為“無類”。</p>
+<p></p>
+<br />IPv4 and IPv6 Addresses << <a href='IPv4 and IPv6 Addresses.html'>Previous</a> <a href='Network and Host Addresses  網絡和主機地址.html'>Next</a> >> Network and Host Addresses  網絡和主機地址</div>
         
     <!-- footer -->
       <div class="container">
