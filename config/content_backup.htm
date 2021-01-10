@@ -8,6 +8,11 @@
 <li lang="">Determine how to use the various features of the course to help you learn.</li>
 <li lang="">Decide when you need to seek additional support.</li>
 </ul>
+<p>心得</p>
+<p>雖然在開始這門課前，就已經有聽說要學習C++或是Python等程式語言的相關知識。</p>
+<p>我原本以為這應該不是什麼太難的課程，沒想到是我太天真了，剛接觸到這些<span>Python程式語言時，我什麼都聽不懂，我除了照著老師上課時錄製的影片一步一步完成之外，也只能向我的組長求救。</span></p>
+<p><span>不過我並沒有因此而開始放棄這門課，我除了上課時仔細聽課，我有空時還會到學生宿舍請教Python程式語言比較厲害的同學。</span></p>
+<p>自評65</p>
 <h1>網站</h1>
 <p>Github:<a href="https://github.com/40923243/cp2020">https://github.com/40923243/cp2020</a></p>
 <p>Kaggle:<a href="https://www.kaggle.com/gg542466/cp2020w8">https://www.kaggle.com/gg542466/cp2020w8</a></p>
@@ -137,9 +142,11 @@
 <h1>HW2</h1>
 <h2>2-1</h2>
 <p>作業二之一:</p>
-<p><span>請問該如何取得與上述一乙相同格式的一甲分組數列? 請詳細說明解題步驟後列出一甲的分組數列.</span></p>
+<p><span>請問該如何取得與上述一乙相同格式的一乙分組數列? 請詳細說明解題步驟後列出一乙的分組數列.</span></p>
 <p>答案:</p>
-<p><span style="background-color: #ffffff; color: #333399;">import</span> <span style="color: #ffcc00;">urllib</span>.request<br/><span style="color: #008000;">#導入urllib.request 模塊</span><br/>target_url = "<span style="color: #800080;">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776</span>"<br/><span style="color: #008000;">#目標網址="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</span><br/>cp1a = []<br/><span style="color: #008000;">#將網址內容導入[ ]為cp1a函數</span><br/><span style="color: #333399;">for</span> line <span style="color: #333399;">in</span> <span style="color: #ffcc00;">urllib</span>.request.urlopen(target_url):<br/> cp1a.append(int(line.decode('<span style="color: #993366;">utf-8</span>').rstrip()))<br/><span style="color: #008000;">#對於urllib.request.urlopen(target_url)內的cp1a.append(int(line.decode('utf-8').rstrip()))</span><br/>from <span style="color: #ffcc00;">random</span> import shuffle<br/><span style="color: #008000;">#從random模塊中導入shuffle函數</span><br/>shuffle(cp1a)<br/><span style="color: #008000;">#隨機排列(cp1a)</span><br/>b=[cp1a[i:i +<span style="color: #008000;">6</span> ] <span style="color: #333399;">for i in</span> range(<span style="color: #008000;">0</span>, len(cp1a), <span style="color: #008000;">6</span>)]<br/><span style="color: #008000;">#函數b=[函數cpla[i:i+6]]在i內形成迴圈(0~6的字符串)</span><br/><span style="color: #333399;">print</span>(b)<br/><span style="color: #008000;">#打印輸出函數b</span></p>
+<p><span style="background-color: #ffffff; color: #333399;">import</span> <span style="color: #ffcc00;">urllib</span>.request<br/><span style="color: #008000;">#導入urllib.request 模塊</span><br/>target_url = "<span style="color: #800080;">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776</span>"<br/><span style="color: #008000;">#目標網址="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</span></p>
+<p>(抓取班上成員學號)</p>
+<p><br/>cp1a = []<br/><span style="color: #008000;">#將網址內容導入[ ]為cp1a函數</span><br/><span style="color: #333399;">for</span> line <span style="color: #333399;">in</span> <span style="color: #ffcc00;">urllib</span>.request.urlopen(target_url):<br/> cp1a.append(int(line.decode('<span style="color: #993366;">utf-8</span>').rstrip()))<br/><span style="color: #008000;">#對於urllib.request.urlopen(target_url)內的cp1a.append(int(line.decode('utf-8').rstrip()))</span><br/>from <span style="color: #ffcc00;">random</span> import shuffle<br/><span style="color: #008000;">#從random模塊中導入shuffle函數</span><br/>shuffle(cp1a)<br/><span style="color: #008000;">#隨機排列(cp1a)</span><br/>b=[cp1a[i:i +<span style="color: #008000;">6</span> ] <span style="color: #333399;">for i in</span> range(<span style="color: #008000;">0</span>, len(cp1a), <span style="color: #008000;">6</span>)]<br/><span style="color: #008000;">#函數b=[函數cpla[i:i+6]]在i內形成迴圈(0~6的字符串)</span><br/><span style="color: #333399;">print</span>(b)<br/><span style="color: #008000;">#打印輸出函數b</span></p>
 <h2>2-2</h2>
 <p></p>
 <h2>2-3</h2>
@@ -375,7 +382,7 @@
 <li>Opening a file for writing with<span> </span><code class="highlighter-rouge">'w'</code><span> </span>will overwrite any file that currently exists with that name. If you have previously written data to that file, it is now gone as soon as Python opens it.</li>
 <li>You can write<span> </span><em>any</em><span> </span>kind of object to any kind of file in Python, as long as you specify the correct format. The simplest thing to do is to write strings to a<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file. But remember - you have to convert numbers or objects into strings before you write them to a file. In a later exercise, we’ll talk about writing to other formats.</li>
 </ol>
-<p></p>
+
 <h1>其他</h1>
 <h2>Develop</h2>
 <p></p>
